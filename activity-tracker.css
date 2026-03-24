@@ -1,1 +1,90 @@
-/* Implement your styles here */
+#at-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-family: sans-serif;
+    z-index: 100000;
+}
+
+#at-toggle {
+    background: #eb6025;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#at-badge {
+    background: rgba(255,255,255,0.2);
+    padding: 2px 6px;
+    border-radius: 8px;
+    margin-left: 5px;
+    font-size: 0.9em;
+}
+
+#at-panel {
+    position: absolute;
+    bottom: 55px;
+    right: 0;
+    width: 300px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+#at-panel.at-hidden { display: none; }
+
+#at-header {
+    background: #1971eb;
+    color: #fff;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+#at-close { background: none; border: none; color: #fff; cursor: pointer; font-size: 18px; }
+
+#at-stats {
+    display: flex;
+    background: #f9fafb;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+.at-sbox { flex: 1; text-align: center; }
+.at-sbox span { display: block; font-size: 1.2em; font-weight: bold; color: #2563eb;}
+.at-sbox label { font-size: 10px; color: #666; text-transform: uppercase; }
+
+#at-subhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    background: #f1f3f5;
+    font-size: 11px;
+    font-weight: bold;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#at-clear { background: none; border: none; color: #eb6025; cursor: pointer; font-size: 10px; }
+
+#at-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.at-item {
+    padding: 10px 12px;
+    border-bottom: 1px solid #f9f9f9;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    }
+    .at-time { color: #aaa; font-size: 10px; }
